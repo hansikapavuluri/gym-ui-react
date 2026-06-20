@@ -1,0 +1,97 @@
+.contact-section{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+.contact-overlay{
+    background: rgba(0,0,0,0.8);
+    padding:60px;
+    max-width: 700px;
+    border-radius: 20px;
+    margin:0 auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px #ff6b00;
+    animation: fadeInUp 1s ease;
+}
+.contact-title{
+    color:#ff6b00;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.contact-title span{
+    color:white; 
+}
+.contact-overlay p{
+    margin-bottom: 40px;
+    color: white;
+    font-size:1rem;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+.input-section{
+    display: flex;
+    gap:20px;
+}
+.input-section input{
+    flex:1;
+}
+input,textarea{
+    background: transparent;
+    border:2px solid #ff6600;
+    color:white;
+    padding : 12px 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+    outline: none;
+}
+input:focus,textarea:focus{
+    border-color: #ffa64d;
+    box-shadow: 0 0 10px #ff6600;
+}
+textarea{
+   resize: none;
+   height: 150px;
+}
+.contact-button{
+    background-color: #ff6600;
+    padding:15px 40px;
+    color:white;
+    font-weight: bold;
+    border-radius: 25px;
+    border:none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.contact-button:hover{
+    background: #ffa64d;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff6600;
+
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width:768px){
+    .input-section{
+        flex-direction: column;
+    }
+    .contact-title{
+        font-size: 1.8rem;
+    }
+    .contact-overlay{
+        padding:40px 25px;
+    }
+
+}

@@ -1,0 +1,33 @@
+.trainer-section{
+    padding : 130px 8%;
+    text-align: center;
+}
+.trainer-title{
+    text-transform: uppercase;
+    color:#ff6b00;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+.trainer-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:25px;
+}
+.trainer-card{
+    background-color: rgba(255,255,255,0.05);
+    width: 220px;
+    border-radius: 16px;
+    padding:20px;
+    transition: 0.3s ease;
+}
+.trainer-card:hover{
+    box-shadow: 0px 0px 20px #ff6b00;
+    transform: scale(1.05);
+}
+.trainer-card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
