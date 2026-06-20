@@ -1,0 +1,4 @@
+[build]
+  base = "gym-ui-react/project-file"
+  command = "npm run build"
+  publish = "dist"
